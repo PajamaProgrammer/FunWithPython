@@ -8,7 +8,7 @@ Where each subsequent number is the summation of the previous two
 """
 
 def fibonacci_sequence (x):
-    if x == 0 or x == 1: return (0, 1) #Base Case
+    if x < 2: return (0, 1) #Base Case
     else:
         fib_seq = fibonacci_sequence(x-1) 
         fib_seq += (fib_seq[x-1]+fib_seq[x-2],)
